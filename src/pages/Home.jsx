@@ -1,0 +1,38 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+export default function Home(){
+  return (
+    <div className="space-y-6">
+      <div className="bg-white rounded-2xl shadow-lg p-8">
+        <h1 className="text-3xl font-bold">AlgoQuest</h1>
+        <p className="mt-2 text-gray-700">Interactive toolkit demonstrating 5 competitive programming topics. Click a module to try.</p>
+        <div className="mt-6 grid md:grid-cols-3 gap-4">
+          <Link to="/graph" className="p-4 rounded-lg bg-indigo-50">Graph Algorithms</Link>
+          <Link to="/dp" className="p-4 rounded-lg bg-purple-50">Dynamic Programming</Link>
+          <Link to="/strings" className="p-4 rounded-lg bg-pink-50">String Algorithms</Link>
+          <Link to="/greedy" className="p-4 rounded-lg bg-amber-50">Greedy Algorithms</Link>
+          <Link to="/segment" className="p-4 rounded-lg bg-green-50">Segment Tree</Link>
+        </div>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-6">
+        <div className="bg-white rounded-2xl shadow-lg p-6">
+          <h3 className="font-semibold">Presentation Tips</h3>
+          <ul className="list-disc ml-6 mt-3 text-sm text-gray-700">
+            <li>Demo sample inputs and explain algorithm choice.</li>
+            <li>Show time complexity and a short performance test.</li>
+            <li>Provide PDFs/screenshots of runs for the evaluator.</li>
+          </ul>
+        </div>
+        <div className="bg-white rounded-2xl shadow-lg p-6">
+          <h3 className="font-semibold">How to run</h3>
+          <ol className="list-decimal ml-6 mt-3 text-sm text-gray-700">
+            <li>npm install</li>
+            <li>npm start</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  );
+}
