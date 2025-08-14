@@ -23,7 +23,7 @@ export default function App() {
             <Route path="/segment" element={<SegmentTreePage />} />
           </Routes>
         </main>
-        <footer className="py-6 text-center text-sm text-gray-500">AlgoQuest — demo project</footer>
+        <footer className="py-6 text-center text-sm text-gray-500">AlgoQuest</footer>
       </div>
     </BrowserRouter>
   );
